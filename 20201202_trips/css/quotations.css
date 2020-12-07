@@ -16,9 +16,9 @@ th, td {
   }
 
 /* Apply "Zebra" stripping to every odd-numbered row of the table */
-tbody tr:nth-child(odd) {
+/* tbody tr:nth-child(odd) {
     background: rgb(188, 210, 252);
-}
+} */
 
 #quotations {
     margin-bottom: 20px;
@@ -52,4 +52,51 @@ footer {
     background-size: 100% 100%;
     justify-content: center;
     color: white;
+}
+
+
+/* -------------------------------------------------------------- */
+
+
+table {
+    font-family: 'Arial';
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #2C7DA0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 
+        0px 10px 20px rgba(0, 0, 0, 0.05), 
+        0px 20px 20px rgba(0, 0, 0, 0.05), 
+        0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Apply background highlight when the user hovers the pointer on a field */
+table tr:hover {
+    background: #f4f4f4;
+}
+
+/* Apply text highlight when the user hovers the pointer on a field */
+table tr:hover td {
+    color: black;
+}
+
+/* Cell-data and border colors/padding */
+table th, table td {
+    color: #999;
+    border: 1px solid #999;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+
+/* Style for table header contents */
+table th {
+    background: #2C7DA0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Get last element of the header and withdraw any borders */
+table th.last {
+    border-right: none;
 }
