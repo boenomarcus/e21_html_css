@@ -10,28 +10,79 @@
 
 
     <!-- Icon that appears at the browser tab -->
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/earth-globe-americas_1f30e.png">
+    <link rel="icon" href="icons/globe.ico">
     
     <!-- Title that will be displayed at the browser -->
     <title>My Trips</title>
 
+    <!-- Indicate style coming from a css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-    <!-- Create title for the trip list -->
-    <h1>Top 5 Trips!</h1>
-    <hr>
 
-    <!-- Brief description of the list -->
-    <p>
-        Below I list my five favourite cities in the world! <br><br> 
-        Click on the links to find out more about them!
-    </p>
+    <!-- Home Page Header -->
+    <header>
+        <p>Five Trips to Have the Time of Your Life!</p>
+    </header>
 
-    <!-- Add links to the list and let user navigate through them -->
-    <a href="cities/cape_town.html" style="margin: 30px;"> 1) Cape Town (South Africa)</a><br>
-    <a href="cities/stellenbosch.html" style="margin: 30px;"> 2) Stellenbosch (South Africa)</a><br>
-    <a href="cities/copenhagen.html" style="margin: 30px;"> 3) Copenhagen (Denmark)</a><br>
-    <a href="cities/stockholm.html" style="margin: 30px;"> 4) Stockholm (Sweden)</a><br>
-    <a href="cities/helsinki.html" style="margin: 30px;"> 5) Helsinki (Finland)</a><br>
+    <!-- Table to arrange elements -->
+    <table style="width: 100%; height: 600px;">
+        <tbody class="list-items">
+
+            <!-- Table first row -->
+            <tr>
+                <td class="home-column-text" style="text-align: right; padding-right: 30px;">
+                    <!-- Brief description of the list -->
+                    <p>Get to Known Your Next Five Destinies!</p>
+
+                    <!-- Ordered List of links -->
+                    <ol class="list-items">
+                        <li><a href="views/cape_town.html"> Cape Town (South Africa)</a><br></li>
+                        <li><a href="views/stellenbosch.html"> Stellenbosch (South Africa)</a><br></li>
+                        <li><a href="views/copenhagen.html"> Copenhagen (Denmark)</a><br></li>
+                        <li><a href="views/stockholm.html"> Stockholm (Sweden)</a><br></li>
+                        <li><a href="views/helsinki.html"> Helsinki (Finland)</a><br></li>
+                    </ol>
+                </td>
+                <td>
+                    <img src="imgs/landsacape-1500.jpg" alt="Landscape Image" title="The Twelve Apostles (Cape Town-SA)" width="100%">
+                </td>
+            </tr>
+
+            <!-- Table second row -->
+            <tr>
+                <td>
+                    <img src="imgs/camera-1500.jpg" alt="Camera" title="Must-Have Items!" width="100%">
+                </td>
+                <td class="home-column-text" style="text-align: left; padding-left: 30px;">
+                    <!-- Brief description of the list -->
+                    <p>Ten Must-Have Items!</p>
+
+                    <!-- Unordered List -->
+                    <ul class="list-items">
+                        <li>Travel Back-pack</li>
+                        <li>Packing Cubes</li>
+                        <li>Packable Jacket</li>
+                        <li>Comfortable Walking/Waterproof Shoes</li>
+                        <li>Light Weight (Compact) Camera</li>
+                        <li>Cables to charge electronics</li>
+                        <li>Power Outlet Adaptors</li>
+                        <li>Collapsible Water-bottle</li>
+                        <li>Travel Insurance</li>
+
+                    </ul>
+                    <p>Remember, ALWAYS get Travel Insurance!</p>
+                    <a href="views/quotations.html">See some quotations here!</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Home Page Footer -->
+    <footer>
+        <p>Marcus M. Boeno &copy; 2020</p>
+    </footer>
+    
 </body>
 </html>

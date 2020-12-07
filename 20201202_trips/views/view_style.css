@@ -1,0 +1,6 @@
+/* Style for Div/Table that contains description and picture of the city  */
+.city-description-table {
+    text-align: center; 
+    padding-left: 10%; 
+    width: 90%;
+}

@@ -1,0 +1,43 @@
+/* Class to handle headers */
+header {
+    width: 100%;
+    height: 100px; 
+    line-height: 100px;
+    background-color: #2C7DA0;
+    border-radius: 15px;
+    text-align: center;
+    background-size: 100% 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    color: white;
+}
+
+/* Class to footers */
+footer {
+    width: 100%;
+    height: 50px; 
+    line-height: 50px;
+    background-color: #2C7DA0;
+    border-radius: 15px;
+    text-align: center;
+    background-size: 100% 100%;
+    justify-content: center;
+    color: white;
+}
+
+/* Handle font style */
+.list-items {
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+}
+
+.home-column-text {
+    vertical-align: middle;
+    list-style-position: inside;
+}
+
+

@@ -1,0 +1,55 @@
+
+/* Resetting table default configs */
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Resetting table header and data element default configs */
+th, td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+/* Apply "Zebra" stripping to every odd-numbered row of the table */
+tbody tr:nth-child(odd) {
+    background: rgb(188, 210, 252);
+}
+
+#quotations {
+    margin-bottom: 20px;
+}
+
+/* Class to handle page headers */
+header {
+    width: 100%;
+    height: 100px; 
+    line-height: 100px;
+    background-color: #2C7DA0;
+    border-radius: 15px;
+    text-align: center;
+    background-size: 100% 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+    color: white;
+}
+
+/* Class to handle page footers */
+footer {
+    width: 100%;
+    height: 50px; 
+    line-height: 50px;
+    background-color: #2C7DA0;
+    border-radius: 15px;
+    text-align: center;
+    background-size: 100% 100%;
+    justify-content: center;
+    color: white;
+}
