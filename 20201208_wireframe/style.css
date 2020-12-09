@@ -128,17 +128,30 @@
 }
 /* ------------------------------------------------------------------ */
 
-/* ---------- QUARTA DIV -------------------------------------------- */
-.bem-vindo {
+/* ---------- QUARTA DIV BOAS VINDAS -------------------------------- */
+.bem-vindo-container {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Format Config */
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bem-vindo-conteudo {
     /* FlexBox Config */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    /* Format Config */
+    width: 80%;
 }
 
-.bem-vindo .card-boas-vindas {
+.card-boas-vindas {
     /* FlexBox Config */
     display: flex;
     flex-direction: column;
@@ -146,27 +159,19 @@
     width: 40%;
 }
 
-/* .bem-vindo .titulo {
-    background-color: rgb(102, 255, 71);
-} */
-
-.bem-vindo .texto {
+.card-boas-vindas .texto {
     /* Content format */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.bem-vindo .saiba-mais {
+.card-boas-vindas .saiba-mais {
     /* Content format */
     width: 40%;
     /* Color Config */
     color: ivory;
     background-color: rgb(126, 6, 6);
 }
-
-/* .bem-vindo .img {
-    background-color: tomato;
-} */
 /* ------------------------------------------------------------------ */
 
 /* ---------- QUINTA DIV -------------------------------------------- */
