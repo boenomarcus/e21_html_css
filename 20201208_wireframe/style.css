@@ -9,20 +9,21 @@
 
 /* ---------- PRIMEIRA DIV ------------------------------------------ */
 .cabecalho {
+    /* Format Config */
     overflow: hidden;
-    /* Color Config */
+    /* Font and Color Config */
     background-color: #003366;
+    width: 100%;
 }
 
 .cabecalho .conteudo {
     /* FlexBox Config */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     /* Content format */
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -40,7 +41,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    /* Color Config */
+    /* Font and Color Config */
     color: white;
 }
 
@@ -49,9 +50,8 @@
     border-radius: 30px;
     padding: 10px;
     margin: 10px;
-    /* Color Config */
+    /* Font and Color Config */
     background-color: #2ba531;
-    /* Font Config */
     font-weight: bold;
 }
 
@@ -60,48 +60,63 @@
     border-radius: 30px;
     padding: 10px;
     margin: 10px;
-    /* Color Config */
+    /* Font and  Color Config */
     background-color: #00b29c;
-    /* Font Config */
     font-weight: bold;
 }
 /* ------------------------------------------------------------------ */
 
-
-
 /* ---------- SEGUNDA DIV ------------------------------------------- */
 .menu-principal {
+    /* Sticky Menu Config */
     position: -webkit-sticky;
     position: sticky;
     background-color: white;
     top: 0;
     z-index: 99;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* FlexBox Config */
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    /* Format Config */
+    width: 100%;
 }
 
 .menu-principal .logo {
     /* Content format */
     padding: 20px;
+    width: 30%;
+    height: auto;
 }
 
 .menu-principal .menu-items {
     /* Content format */
-    width: 100%;
+    width: 70%;
 }
 
 .menu-principal .menu-items ul {
     /* FlexBox Config */
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     /* Content format */
     list-style: none;
-    padding: 0px 10px;
+}
+
+.menu-principal .menu-items ul a {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-principal .menu-items ul a:hover {
+    /* Font and Color Config */
+    color: white;
+    background-color: #003366;
 }
 /* ------------------------------------------------------------------ */
 
@@ -237,5 +252,84 @@
     display: flex;
     flex-direction: column;
     
+}
+/* ------------------------------------------------------------------ */
+
+/* ---- OITAVA DIV PRIMEIRO RODAPÉ ---------------------------------- */
+.rodape-primeiro {
+    /* Format Config */
+    overflow: hidden;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* Font and Color Config */
+    background-color: #003366;
+}
+
+.rodape-primeiro .rodape-conteudo {
+    /* FlexBox Config */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Content format */
+    width: 90%;
+    margin: 0 auto;
+    /* Font and Color Config */
+    color: white;
+}
+
+.rodape-primeiro .rodape-conteudo .rodape-contatos {
+    /* Flexbox Config */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.rodape-primeiro .rodape-conteudo .rodape-botoes {
+    /* Flexbox Config */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rodape-primeiro .rodape-conteudo .rodape-botoes .whatsapp {
+    /* Content format */
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    /* Font and Color Config */
+    background-color: #2ba531;
+    font-weight: bold;
+}
+
+.rodape-primeiro .rodape-conteudo .rodape-botoes .atendimento-online {
+    /* Content format */
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    /* Font and  Color Config */
+    background-color: #00b29c;
+    font-weight: bold;
+}
+/* ------------------------------------------------------------------ */
+
+/* ---- NONA DIV SEGUNDO RODAPÉ ------------------------------------- */
+
+.rodape-segundo {
+    /* Flexbox Config */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Format Config */
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    /* Font and Color Config */
+    background-color: #003366;
 }
 /* ------------------------------------------------------------------ */
