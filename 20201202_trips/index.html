@@ -5,7 +5,7 @@
     <!-- Indicate character enconding for the file -->
     <meta charset="UTF-8">
 
-    <!-- Indicate that the view will automatically adjust to devide settings -->
+    <!-- Indicate that the view will automatically adjust to device settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -21,68 +21,211 @@
 </head>
 <body>
 
-    <!-- Home Page Header -->
+    <!-- Home Page Header (Image) -->
     <header>
-        <p>Five Trips to Have the Time of Your Life!</p>
+        <img id="homepage-cover" src="imgs/sea-mountain-300.jpg">
     </header>
 
-    <!-- Table to arrange elements -->
-    <table style="width: 100%; height: 600px;">
-        <tbody class="list-items">
+    <!-- Home Page Heading -->
+    <h1 id="homepage-title">Five Trips to Have the Time of Your Life!</h1>
 
-            <!-- Table first row -->
-            <tr>
-                <td class="home-column-text" style="text-align: right; padding-right: 30px;">
-                    <!-- Brief description of the list -->
-                    <p>Get to Known Your Next Five Destinies!</p>
+    <!-- Navigation menu -->
+    <div class="navigation-top">
+        <a href="">Home</a>
+        <a href="#top-cities-heading">Top 5 Trips</a>
+        <a href="#items-must-have">Must-Have Items</a>
+    </div>
 
-                    <!-- Ordered List of links -->
-                    <ol class="list-items">
-                        <li><a href="views/cape_town.html"> Cape Town (South Africa)</a><br></li>
-                        <li><a href="views/stellenbosch.html"> Stellenbosch (South Africa)</a><br></li>
-                        <li><a href="views/copenhagen.html"> Copenhagen (Denmark)</a><br></li>
-                        <li><a href="views/stockholm.html"> Stockholm (Sweden)</a><br></li>
-                        <li><a href="views/helsinki.html"> Helsinki (Finland)</a><br></li>
-                    </ol>
-                </td>
-                <td>
-                    <img src="imgs/landsacape.jpg" alt="Landscape Image" title="The Twelve Apostles (Cape Town-SA)" width="100%">
-                </td>
-            </tr>
+    <div class="vertical-flex">
+        <!-- Introduction to the website -->
+        <h1>My Trips</h1>
+        <h5>Last update, Dev 7, 2020</h5>
+        <img id="home-image" src="imgs/landscape-400.jpg" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iure explicabo ea ducimus vel cum nihil dolorum magni quos, molestias culpa minus obcaecati. Consectetur provident itaque optio voluptatibus error impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, earum officia! Consequuntur perferendis reprehenderit veritatis ad eum vitae corrupti ducimus. Perspiciatis quae perferendis nulla esse necessitatibus quos? Molestias, reprehenderit quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugiat autem praesentium quae nulla, omnis repellat id beatae rerum iure sapiente temporibus voluptas in sunt rem aperiam. Quisquam, sit quasi.
+        </p>
 
-            <!-- Table second row -->
-            <tr>
-                <td>
-                    <img src="imgs/camera.jpg" alt="Camera" title="Must-Have Items!" width="100%">
-                </td>
-                <td class="home-column-text" style="text-align: left; padding-left: 30px;">
-                    <!-- Brief description of the list -->
-                    <p>Ten Must-Have Items!</p>
+        <!-- Top 5 List -->
+        <h1 id="top-cities-heading">Top 5 Cities</h1>
+        <h5>Last update, Dev 7, 2020</h5>
 
-                    <!-- Unordered List -->
-                    <ul class="list-items">
-                        <li>Travel Back-pack</li>
-                        <li>Packing Cubes</li>
-                        <li>Packable Jacket</li>
-                        <li>Comfortable Walking/Waterproof Shoes</li>
-                        <li>Light Weight (Compact) Camera</li>
-                        <li>Cables to charge electronics</li>
-                        <li>Power Outlet Adaptors</li>
-                        <li>Collapsible Water-bottle</li>
-                        <li>Travel Insurance</li>
+        <div class="top-cities">
 
-                    </ul>
-                    <p>Remember, ALWAYS get Travel Insurance!</p>
-                    <a href="views/quotations.html">See some quotations here!</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+            <!-- Cape Town -->
+            <div>
+                <div id="city-name" class="horizontal-flex">
+                    <div>
+                        <img src="icons/southafrica.ico" alt="">
+                    </div>
+                    <div>
+                        <p>Cape Town</p>
+                    </div>
+                </div>
+                <a href="views/cape_town.html"><img id="city-image" src="imgs/capetown.jpg" alt=""></a>
+            </div>
+
+            <!-- Stellenbosch -->
+            <div>
+                <div id="city-name" class="horizontal-flex">
+                    <div>
+                        <img src="icons/southafrica.ico" alt="">
+                    </div>
+                    <div>
+                        <p>Stellenbosch</p>
+                    </div>
+                </div>
+                <a href="views/stellenbosch.html"><img id="city-image" src="imgs/stellenbosch.jpg" alt=""></a>
+            </div>
+
+            <!-- Copenhagen -->
+            <div>
+                <div id="city-name" class="horizontal-flex">
+                    <div>
+                        <img src="icons/denmark.ico" alt="">
+                    </div>
+                    <div>
+                        <p>Copenhagen</p>
+                    </div>
+                </div>
+                <a href="views/copenhagen.html"><img id="city-image" src="imgs/copenhagen.jpg" alt=""></a>
+            </div>
+
+            <!-- Stockholm -->
+            <div>
+                <div id="city-name" class="horizontal-flex">
+                    <div>
+                        <img src="icons/sweden.ico" alt="">
+                    </div>
+                    <div>
+                        <p>Stockholm</p>
+                    </div>
+                </div>
+                <a href="views/stockholm.html"><img id="city-image" src="imgs/stockholm.jpg" alt=""></a>
+            </div>
+
+            <!-- Helsinki -->
+            <div>
+                <div id="city-name" class="horizontal-flex">
+                    <div>
+                        <img src="icons/finland.ico" alt="">
+                    </div>
+                    <div>
+                        <p>Helsinki</p>
+                    </div>
+                </div>
+                <a href="views/helsinki.html"><img id="city-image" src="imgs/helsinki.jpg" alt=""></a>
+            </div>
+          
+
+        </div>
+        
+
+        <!-- Top 10 Items to Carry -->
+        <h1 id="items-must-have">Ten Must-Have Items!</h1>
+
+        <!-- Unordered List -->
+        <ul id="item-list">
+            <li>Travel Back-pack</li>
+            <li>Packing Cubes</li>
+            <li>Packable Jacket</li>
+            <li>Comfortable Walking/Waterproof Shoes</li>
+            <li>Light Weight (Compact) Camera</li>
+            <li>Cables to charge electronics</li>
+            <li>Power Outlet Adaptors</li>
+            <li>Collapsible Water-bottle</li>
+            <li>Travel Insurance</li>
+        </ul>
+
+        <!-- New Paragraph -->
+        <p>Remember, ALWAYS get Travel Insurance!</p>
+
+        <!-- Quotations Table -->
+        <table id="quotations">
+            <!-- Table caption (Title) -->
+            <caption>
+                <p>Quotation for some of the <strong>Must-Have Items!</strong></p>
+            </caption>
+            <!-- Quotations table header -->
+            <thead id="quotations-header">
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Vendor</th>
+                </tr>
+            </thead>
+            <!-- Items to appear at the quotations table -->
+            <tbody id="quotations-body">
+
+                <!-- (Begin) Travel BackPacks -->
+                <tr>
+                    <td rowspan="3">Travel Back-pack</td>
+                    <td><a href="https://www.amazon.com/Peak-Design-Travel-Line-Backpack/dp/B07GH4HMFR/ref=sxin_10?ascsubtag=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&creativeASIN=B07GH4HMFR&crid=1TBEC2SXJQKDT&cv_ct_cx=travel+backpack&cv_ct_id=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-gl-ranking&dchild=1&keywords=travel+backpack&linkCode=oas&pd_rd_i=B07GH4HMFR&pd_rd_r=43266c85-fd1e-41cf-b7c2-dcb3a6099383&pd_rd_w=EUkH3&pd_rd_wg=aSibQ&pf_rd_p=5ca5891e-f8d5-441d-985e-3d725696ef70&pf_rd_r=2VP6NYSPJ38AY4S088DY&qid=1607348339&sprefix=travel+back%2Caps%2C322&sr=1-1-d9dc7690-f7e1-44eb-ad06-aebbef559a37&tag=ogl02-20">Peak Design Travel Line Backpack 45L (Sage)</a></td>
+                    <td>USD 299.95</td>
+                    <td>Peak Design</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Osprey-Packs-Porter-Travel-Backpack/dp/B06VVJZHB9/ref=sxin_10?ascsubtag=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&creativeASIN=B06VVJZHB9&crid=1TBEC2SXJQKDT&cv_ct_cx=travel+backpack&cv_ct_id=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-gl-ranking&dchild=1&keywords=travel+backpack&linkCode=oas&pd_rd_i=B06VVJZHB9&pd_rd_r=43266c85-fd1e-41cf-b7c2-dcb3a6099383&pd_rd_w=EUkH3&pd_rd_wg=aSibQ&pf_rd_p=5ca5891e-f8d5-441d-985e-3d725696ef70&pf_rd_r=2VP6NYSPJ38AY4S088DY&qid=1607348339&sprefix=travel+back%2Caps%2C322&sr=1-2-d9dc7690-f7e1-44eb-ad06-aebbef559a37&tag=ogl02-20">Osprey Porter 46</a></td>
+                    <td>USD 104.94</td>
+                    <td>Osprey</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Cotopaxi-Allpa-35L-Travel-Pack/dp/B07HT2LLGK/ref=sxin_10?ascsubtag=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&creativeASIN=B07HT2LLGK&crid=1TBEC2SXJQKDT&cv_ct_cx=travel+backpack&cv_ct_id=amzn1.osa.0c0f4c1a-be19-4e77-9472-540202d8b377.ATVPDKIKX0DER.en_US&cv_ct_pg=search&cv_ct_we=asin&cv_ct_wn=osp-single-source-gl-ranking&dchild=1&keywords=travel+backpack&linkCode=oas&pd_rd_i=B07HT2LLGK&pd_rd_r=43266c85-fd1e-41cf-b7c2-dcb3a6099383&pd_rd_w=EUkH3&pd_rd_wg=aSibQ&pf_rd_p=5ca5891e-f8d5-441d-985e-3d725696ef70&pf_rd_r=2VP6NYSPJ38AY4S088DY&qid=1607348339&sprefix=travel+back%2Caps%2C322&sr=1-3-d9dc7690-f7e1-44eb-ad06-aebbef559a37&tag=ogl02-20">Cotopaxi Allpa</a></td>
+                    <td>USD 174.56</td>
+                    <td>Cotopaxi</td>
+                </tr>
+                <!-- (End) Travel BackPacks -->
+                
+                <!-- (Begin) Cameras -->
+                <tr>
+                    <td rowspan="3">Light Weight (Compact) Camera</td>
+                    <td><a href="https://www.amazon.com/Canon-Mirrorless-Camera-15-45mm-3-5-6-3/dp/B07WDLY364/ref=sr_1_19?dchild=1&keywords=lightweight+%28compact%29+camera&qid=1607349182&rnid=172282&s=electronics&sr=1-19">Canon EOS M6 Mark II Mirrorless</a></td>
+                    <td>USD 1,099.00</td>
+                    <td>Canon</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Sony-Alpha-a6400-Mirrorless-Camera/dp/B07MV3P74D/ref=sr_1_18?dchild=1&keywords=lightweight+%28compact%29+camera&qid=1607349182&rnid=172282&s=electronics&sr=1-18">Sony Alpha a6400 Mirrorless</a></td>
+                    <td>USD 1,298.00</td>
+                    <td>Sony</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Digital-Compact-Camera-Touch-Screen/dp/B07NSMJX2K/ref=sr_1_7?dchild=1&keywords=lightweight+%28compact%29+camera&qid=1607349182&rnid=172282&s=electronics&sr=1-7">Ricoh GR III</a></td>
+                    <td>USD 896.95</td>
+                    <td>Ricoh</td>
+                </tr>
+                <!-- (End) Cameras -->
+                
+                <!-- (Begin) Walking Shoes -->
+                <tr>
+                    <td rowspan="3">Comfortable Walking/Waterproof Shoes</td>
+                    <td><a href="https://www.amazon.com/Columbia-Crestwood-Waterproof-Hiking-Squash/dp/B0787LNR7S/ref=sr_1_5?dchild=1&keywords=walking+shoes&qid=1607349630&s=sporting-goods&sr=1-5">Crestwood Waterproof Hiking</a></td>
+                    <td>USD 159.60</td>
+                    <td>Columbia</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Merrell-Mens-Waterproof-Hiking-Beluga/dp/B01HFA6A10/ref=sr_1_3?dchild=1&keywords=walking+shoes+waterproof&qid=1607349661&s=sporting-goods&sr=1-3">Moab 2 Waterproof Hiking</a></td>
+                    <td>USD 242.94</td>
+                    <td>Merrell</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.amazon.com/Wantdo-Waterproof-Outdoor-Trekking-Backpacking/dp/B07P69VCRF/ref=sr_1_5?dchild=1&keywords=walking+shoes+waterproof&qid=1607349661&s=sporting-goods&sr=1-5">Wantdo Outdoor Mountaineering</a></td>
+                    <td>USD 62.99</td>
+                    <td>Wantdo</td>
+                </tr>
+                <!-- (end) Walking Shoes -->
+
+            </tbody>
+        </table>
+
+    </div>
 
     <!-- Home Page Footer -->
     <footer>
-        <p>Marcus M. Boeno &copy; 2020</p>
+        <p>&copy; 2020 Marcus M. Boeno</p>
     </footer>
-    
+
+    <!-- Link to JS script -->
+    <script src="../js/quotation_table.js"></script>
+
 </body>
 </html>

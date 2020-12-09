@@ -1,0 +1,241 @@
+/* ---------- GLOBAL CONFIG ----------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------------------------------------------ */
+
+
+/* ---------- PRIMEIRA DIV ------------------------------------------ */
+.cabecalho {
+    overflow: hidden;
+    /* Color Config */
+    background-color: #003366;
+}
+
+.cabecalho .conteudo {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Content format */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cabecalho .item {
+    /* Color Config */
+    color: white;
+    /* Font Config */
+    font-size: 20px;
+}
+
+.cabecalho .botoes {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* Color Config */
+    color: white;
+}
+
+.cabecalho .botoes .whatsapp {
+    /* Content format */
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    /* Color Config */
+    background-color: #2ba531;
+    /* Font Config */
+    font-weight: bold;
+}
+
+.cabecalho .botoes .atendimento-online {
+    /* Content format */
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    /* Color Config */
+    background-color: #00b29c;
+    /* Font Config */
+    font-weight: bold;
+}
+/* ------------------------------------------------------------------ */
+
+
+
+/* ---------- SEGUNDA DIV ------------------------------------------- */
+.menu-principal {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-principal .logo {
+    /* Content format */
+    padding: 20px;
+}
+
+.menu-principal .menu-items {
+    /* Content format */
+    width: 100%;
+}
+
+.menu-principal .menu-items ul {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Content format */
+    list-style: none;
+    padding: 0px 10px;
+}
+/* ------------------------------------------------------------------ */
+
+/* ---------- TERCEIRA DIV ------------------------------------------ */
+#cover-image {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+/* ------------------------------------------------------------------ */
+
+/* ---------- QUARTA DIV -------------------------------------------- */
+.bem-vindo {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.bem-vindo .card-boas-vindas {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+/* .bem-vindo .titulo {
+    background-color: rgb(102, 255, 71);
+} */
+
+.bem-vindo .texto {
+    /* Content format */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bem-vindo .saiba-mais {
+    /* Content format */
+    width: 40%;
+    /* Color Config */
+    color: ivory;
+    background-color: rgb(126, 6, 6);
+}
+
+/* .bem-vindo .img {
+    background-color: tomato;
+} */
+/* ------------------------------------------------------------------ */
+
+/* ---------- QUINTA DIV -------------------------------------------- */
+.cards-servicos {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+    /* Content format */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* Color Config */
+    background-color: #003366;
+
+}
+
+.cards-servicos .card {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Color Config */
+    color: white;
+}
+
+.cards-servicos .card .titulo-servico {
+    /* Content format */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cards-servicos .card .descricao-servico {
+    /* Content format */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+}
+.cards-servicos .card .servico-saiba-mais {
+    /* Content format */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 45%;
+    /* Color Config */
+    color: ivory;
+    background-color: rgb(126, 6, 6);
+}
+/* ------------------------------------------------------------------ */
+
+/* ---------- SEXTA DIV --------------------------------------------- */
+.fale-conosco-outter {
+    /* FlexBox Config */
+    display: flex;
+    justify-content: center;
+    /* Color Config */
+    background-color: white;
+    /* Content format */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fale-conosco-outter .fale-conosco-inner {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fale-conosco-outter .fale-conosco-inner .titulo {
+    /* Content format */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(131, 11, 11);
+}
+
+.fale-conosco-outter .fale-conosco-inner .formulario {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: row;
+}
+
+.fale-conosco-outter .fale-conosco-inner .formulario .nome-email-telefone {
+    /* FlexBox Config */
+    display: flex;
+    flex-direction: column;
+    
+}
+/* ------------------------------------------------------------------ */

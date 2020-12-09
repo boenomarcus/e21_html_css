@@ -1,43 +1,200 @@
-/* Class to handle headers */
-header {
-    width: 100%;
-    height: 100px; 
-    line-height: 100px;
-    background-color: #2C7DA0;
-    border-radius: 15px;
-    text-align: center;
-    background-size: 100% 100%;
+
+/* Handle body tag */
+body {
+
+    /* Change default font for the entire body */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    /* Set all margins to zero */
+    margin: 0;
+    padding: 0;
+}
+
+/* Handle header tags */
+/* header {
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    background-color: #2C7DA0;
+    padding: 150px;
+    text-align: center;
+    color: white;
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3vw;
-    color: white;
+} */
+
+
+header {
+    overflow: hidden;
 }
 
-/* Class to footers */
+
+
+/* Handle footer tags */
 footer {
-    width: 100%;
-    height: 50px; 
-    line-height: 50px;
-    background-color: #2C7DA0;
-    border-radius: 15px;
-    text-align: center;
-    background-size: 100% 100%;
+    display: flex;
     justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #2C7DA0;
     color: white;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Handle font style */
-.list-items {
+/* Class to define behaviour of flex horizontal panels */
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Class to define behaviour of flex vertical panels */
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Class to control the top navigation bar */
+.navigation-top {
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    z-index: 99;
+}
+  
+/* Style the navigation bar links */
+.navigation-top a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+  
+/* Right-aligned link */
+.navigation-top a.right {
+    float: right;
+}
+  
+/* Change color on hover */
+.navigation-top a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Handle list of cities */
+#city-list {
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20pt;
 }
 
-.home-column-text {
-    vertical-align: middle;
-    list-style-position: inside;
+/* Handle list of itens */
+#item-list {
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+}
+
+#country-flag {
+    height: 60%;
+}
+
+#country-link {
+    text-align: center;
+    color: white;
+}
+
+#homepage-title {
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    color: white;
+}
+
+#homepage-cover {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.top-cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+#city-image {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#city-name {
+    justify-content: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+table {
+    font-family: 'Arial';
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #2C7DA0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 
+        0px 10px 20px rgba(0, 0, 0, 0.05), 
+        0px 20px 20px rgba(0, 0, 0, 0.05), 
+        0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Apply background highlight when the user hovers the pointer on a field */
+table tr:hover {
+    background: #f4f4f4;
+}
+
+/* Apply text highlight when the user hovers the pointer on a field */
+table tr:hover td {
+    color: black;
+}
+
+/* Cell-data and border colors/padding */
+table th, table td {
+    color: #999;
+    border: 1px solid #999;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+
+/* Style for table header contents */
+table th {
+    background: #2C7DA0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* Get last element of the header and withdraw any borders */
+table th.last {
+    border-right: none;
+}
