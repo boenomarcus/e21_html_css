@@ -5,15 +5,6 @@
     padding: 0;
 }
 
-p {
-    /* Format Config */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: justify;
-    /* Font and Color Config */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 header {
     /* Format Config */
     overflow: hidden;
@@ -41,7 +32,10 @@ footer {
     /* Flexbox Config */
     display: flex;
     flex-direction: row;
-    padding-left: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    /* Format Config */
+    height: 50px;
     /* Font and Color Config */
     background-color: #2C7DA0;
     color: white;
@@ -62,6 +56,8 @@ footer {
     overflow: hidden;
     top: 0;
     z-index: 99;
+    /* Format Config */
+    margin-bottom: 10px;
     /* Color and Font Config */
     background-color: black;
 }
@@ -104,11 +100,10 @@ footer {
     justify-content: center;
     align-items: center;
     /* Format Config */
-    /* overflow: hidden; */
     width: 100%;
 }
 
-.post {
+.article {
     /* Flexbox Config */
     display: flex;
     flex-direction: column;
@@ -116,43 +111,64 @@ footer {
     align-items: flex-start;
     /* Format Config */
     width: 90%;
-    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.post h1 {
+.article .article-header {
+    /* Format Config */
+    margin-bottom: 20px;
+}
+
+.article .article-title {
     /* Font and Color Config */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20pt;
     font-weight: normal;
 }
 
-.post .post-author-date {
+.article .article-subtitle {
+    /* Font and Color Config */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.article .article-author-date {
     /* Font and Color Config */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 10pt;
     font-weight: normal;
     font-style: italic;
-    padding: 0;
-}
-/* -------------------------------------------------------------------------- */
-
-/* ---- ABOUT ME POST CONFIG ------------------------------------------------ */
-.post .about-me {
-    /* Flexbox Config */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
-#about-me-image {
-    padding-top: 20px;
+.article .article-text {
+    /* Format Config */
+    text-align: justify;
+    /* Font and Color Config */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+.article .article-image-full {
     width: 100%;
     height: auto;
 }
+
+.article .article-footer {
+    /* Format Config */
+    width:100%;
+    text-align:left;
+    margin-left:0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /* ---- TOP FIVE CITIES POST CONFIG ----------------------------------------- */
-.post .city-card-list {
+.article .city-card-list {
     /* Flexbox Config */
     display: flex;
     flex-direction: row;
@@ -161,7 +177,7 @@ footer {
     flex: 1;
 }
 
-.post .city-card-list .city-card {
+.article .city-card-list .city-card {
     /* Flexbox Config */
     display: flex;
     flex-direction: column;
@@ -176,7 +192,7 @@ footer {
     border-radius: 15px;
 }
 
-.post .city-card-list .city-card .city-flag-name {
+.article .city-card-list .city-card .city-flag-name {
     /* Flexbox Config */
     display: flex;
     flex-direction: row;
@@ -188,7 +204,7 @@ footer {
     
 } */
 
-.post .city-card-list .city-card .city-flag-name #city-name {
+.article .city-card-list .city-card .city-flag-name #city-name {
     /* Format Config */
     padding-left: 10px;
 }
@@ -196,7 +212,7 @@ footer {
 
 /* ---- MUST HAVE ITEMS POST CONFIG ----------------------------------------- */
 
-.post #must-have-items {
+.article #must-have-items {
     /* Flexbox Config */
     display: flex;
     flex-direction: column;
